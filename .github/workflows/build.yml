@@ -16,8 +16,6 @@ jobs:
             board: bluemicro840_v1
           - shield: sofle_right
             board: bluemicro840_v1
-          - shield: settings_reset
-            board: bluemicro840_v1
     steps:
       - name: Checkout
         uses: actions/checkout@v2
