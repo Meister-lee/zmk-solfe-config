@@ -37,13 +37,13 @@
 // TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
 // |       |     |     |      |      |      |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
-// | `     |     |  ^  |      |   -  |      |                   |   6  |   7   |   8   |   9  |    0  |  F12  |
+// | `     |     |  ^  |      |   -  |   _  |                   |   6  |   7   |   8   |   9  |    0  |  F12  |
 // |       |  <- |  v  |  ->  |   +  |      |                   |  ^   |  &    |  *    |  (   |   )   |   |   |
 // |       |     |     |      |   =  |      |        |  |       |  [   |  ]    |  ;    |  :   |   \   |       |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
 &none     &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                    &kp F6   &kp F7   &kp F8     &kp F9    &kp F10 &kp F11
-&kp GRAVE &none     &kp UP    &none       &kp MINUS &none                     &none    &none    &none      &none     &none   &kp F12
+&kp GRAVE &none     &kp UP    &none       &kp MINUS &kp UNDER                 &none    &none    &none      &none     &none   &kp F12
 &trans    &kp LEFT  &kp DOWN  &kp RIGHT   &kp PLUS  &none                     &none    &none    &none      &none     &none   &none
 &trans    &none     &none     &none       &kp EQUAL &none    &trans   &trans  &none    &none    &none      &none     &none   &none
                     &trans    &trans      &trans    &trans   &trans   &trans  &trans   &trans   &trans     &trans
@@ -63,7 +63,7 @@
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &none       &none      &none      &none      &none   &kp INSERT
 &trans     &none        &none        &none        &none        &none                    &none       &none      &none      &none      &none   &none
 &trans     &none        &none        &none        &none        &none                    &none       &none      &none      &none      &none   &none
-&trans     &none        &none        &none        &none        &none   &trans   &trans  &none       &none      &none      &none      &none  &none
+&trans     &none        &none        &none        &none        &none   &trans   &trans  &none       &none      &none      &none      &none   &none
                         &trans       &trans       &trans       &trans  &trans   &trans  &trans      &trans     &trans     &trans
             >;
 
