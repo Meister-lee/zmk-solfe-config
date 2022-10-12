@@ -18,9 +18,9 @@ jobs:
             board: bluemicro840_v1
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@main
       - name: Cache west modules
-        uses: actions/cache@v2
+        uses: actions/cache@main
         env:
           cache-name: cache-zephyr-modules
         with:
@@ -60,7 +60,7 @@ jobs:
         run: west build -s zmk/app -b ${{ matrix.board }} -- ${{ steps.variables.outputs.shield-arg }}
           -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Archive artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@main
         with:
           name: ${{ steps.variables.outputs.artifact-name }}
           path: |
