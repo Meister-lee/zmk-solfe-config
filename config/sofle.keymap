@@ -17,7 +17,7 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LEFT_SHIFT>, <&kp LEFT_SHIFT>, <&kp CAPS>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
     };
 
@@ -29,7 +29,9 @@
             tap-ms = <40>;
             wait-ms = <40>;
             bindings
-                = <&kp RCTRL &kp SPACE>;
+                = <&macro_press &kp RCTRL>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp RCTRL>;
             };
     };
 
